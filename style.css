@@ -1,0 +1,371 @@
+body{
+    margin: 0;
+}
+/* HEADER */
+ul{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+.navHeader{
+    background-color: black;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+h1, p{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav, ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    padding: 0 20px;
+}
+h1{
+    margin: 0;
+    padding: 19px;
+    font-size: 37pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botaologo{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+li:hover, h1:hover, button:hover{   
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button:focus ~ ul{
+    height: 260px;
+}
+
+
+    /* IMAGEM-TOPO  */
+
+    #imagem-topo-1{
+        background-image: url(img/prop\ 1.png);  /* COLOCAR IMAGEM CERTA */
+        background-repeat: repeat;
+        background-position: center;
+        width: 100%;
+        min-height: 300px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #imagem-topo-2{
+        background-image: url(img/prop\ 2.png);  /* COLOCAR IMAGEM CERTA */
+        background-repeat: repeat;
+        background-position: center;
+        width: 100%;
+        min-height: 300px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    /* SALE */
+
+    
+
+    /* Wrapper */
+.wrapper{
+    max-height: 370px;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+}
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+.wrapper .item{
+    min-width: 270px;
+    height: 35 0px;
+    line-height: 110px;
+    text-align: center;
+    background-color: azure;
+    margin-right: 2px;
+    scroll-snap-align: start;
+}
+
+
+
+  /* Fig item */
+figure {
+    border: thin #c0c0c0 solid;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+.img {
+    max-width: 220px;
+    max-height: 150px;
+    border-radius: 20px;
+}
+
+figcaption {
+    background-color: #222;
+    border-radius: 20px;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,label {
+    margin: 0.4rem 0;
+}
+.h2Sale{
+    width: 900px;
+    font-size: 29pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(19, 18, 17);
+    margin-left: 50px;
+}
+
+/* Contato */
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 10px 45px;
+    width: 500px;
+}
+.h2cont{
+    color: black;
+    font-size: 2.5rem;
+    margin: 2rem;   
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #070707;
+    border-radius: 20px;
+    color: #000000;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: black;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 16px;
+}
+
+textarea{
+    resize: none;
+}
+
+/* CElULAR */
+
+.risco{
+    text-decoration: line-through;
+
+}
+
+@media screen and (max-width: 700px){
+
+    nav, ul{
+        flex-direction: column;
+    }
+    ul{
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+    .navHeader{
+        padding: 0px;
+        align-items: flex-start;
+        width: 100%;
+    }
+    h1{
+        margin: 10px;
+    }
+    #botaologo{
+        display: flex;
+    }
+    li, ul{
+        width: 100%;
+    }
+    /* Wrapper */
+    .wrapper{
+        max-height: 340px;
+        display: flex;
+        overflow-x: auto;
+    }
+
+
+    .itemSale{
+        max-height: 120px;
+        border: 1px solid black;
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .wrapper::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .boxs{
+        flex-grow: 1;
+        display: none;
+    }
+
+}
+
+/*--Rodapé--*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+   }
+   
+   footer{
+       width: 100%;
+       min-height: 250px;
+       background: #252121;
+       display: flex;
+   }
+   
+   footer .boxs{
+       width: 320px;
+       min-height: 150px;
+       padding: 20px;
+   }
+   
+   footer .boxs:nth-child(4){
+       width: 400px;
+   }
+   
+   .boxs h2{
+       color: #fff;
+       margin-bottom: 20px;
+   }
+   
+   .boxs ol, li{
+       margin: 10px 0px;
+       list-style: none;
+   }
+   
+   .box ol, li, a{
+       color: #ddd;
+       text-decoration: none;
+   }
+   
+   .box ol, li, a:hover{
+       color: #fff;
+   }
+   
+   .box p{
+       color: #fff;
+       text-align: justify;
+       text-align: center;
+   }
+   
+   .footer{
+       width: 100%;
+       height: 70px;
+       display: flex;
+       justify-content:space-between;
+       align-items: center;
+       background: #333;
+       padding: 0px 20px;
+   }
+   
+   .footer h2{
+       color: #fff;
+   }
+   
+   .footer .sociais{
+       display:flex ;
+   }
+   
+   .sociais .social{
+       width: 40px;
+       height: 40px;
+       text-align: center;
+       line-height: 40px;
+       background: #ffffff;
+       margin: 10px;
+       border-radius: 5px;
+       cursor: pointer;
+       transition: background .4s linear ;
+   }
+   
+   .sociais .social a{
+       color: #252121;
+       font-size: 1.5em;
+       transition: color .4s linear ;
+   }
+   
+   .sociais .social:hover{
+       background: #333;
+   }
+   
+   .sociais .social:hover a{
+       color: #fff;
+   }
+
+   .footer, h2{
+    width: 100%;
+   }
